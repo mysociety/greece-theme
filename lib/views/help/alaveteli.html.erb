@@ -1,11 +1,11 @@
-<% @title = "Making requests" %>
+<% @title = "Powered by Alaveteli" %>
 
 <%= render :partial => 'sidebar' %>
 <div id="left_column_flip" class="left_column_flip">
   <% if params[:country_name] %>
     <h1><%= _("Would you like to see a website like this in your country?") %></h1>
   <% else %>
-    <h1>Powered by Alaveteli</h1>
+    <h1><%= @title %></h1>
   <% end %>
   <p>This website is powered by Alaveteli.  Alaveteli is free software
     for making Freedom of Information requests.  It can easily be
