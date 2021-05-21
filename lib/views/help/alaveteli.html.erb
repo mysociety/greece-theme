@@ -1,30 +1,40 @@
-<% @title = "Powered by Alaveteli" %>
+<% @title = "Σχετικά με το πλαίσιο Alaveteli." %>
 
 <%= render :partial => 'sidebar' %>
+
 <div id="left_column_flip" class="left_column_flip">
   <% if params[:country_name] %>
-    <h1><%= _("Would you like to see a website like this in your country?") %></h1>
+    <h1>
+      <%= _("Would you like to see a website like this in your country?") %>
+    </h1>
   <% else %>
     <h1><%= @title %></h1>
   <% end %>
-  <p>This website is powered by Alaveteli.  Alaveteli is free software
-    for making Freedom of Information requests.  It can easily be
-    translated into any language, and customised for variations of FOI
-    law.</p>
 
-  <p>The development of Alaveteli is sponsored and supported by a
-    number of foundations and charities who are interested in
-    transparency across the world.</p>
+  <p>
+    Αυτή η πλατφόρμα τροφοδοτείται από το Alaveteli. Το Alaveteli είναι ελεύθερο
+    λογισμικό για την υποβολή αιτημάτων πρόσβασης στη δημόσια πληροφορία. Μπορεί
+    εύκολα να μεταφραστεί σε οποιαδήποτε γλώσσα και να παραμετροποιηθεί για τις
+    διάφορες εθνικές εκδοχές της νομοθεσίας για το δικαίωμα στην πληροφόρηση. Η
+    ανάπτυξη του Alaveteli υποστηρίζεται και υποστηρίζεται από έναν σημαντικό
+    αριθμό ιδρυμάτων και φιλανθρωπικών οργανώσεων που ενδιαφέρονται για τη
+    διαφάνεια και την προώθησή της σε ολόκληρο τον κόσμο.
+  </p>
 
-  <p>If you would like to set up an Alaveteli website in your own
-    country, we can help.  You will need a few days to get the site
-    configured and ready to use, and will then have to spend at least an
-    hour a week moderating and managing the site (more for busy
-    websites).</p>
+  <p>
+    Εάν θέλετε να δημιουργήσετε μια δική σας ιστοσελίδα Alaveteli στη χώρα σας,
+    μπορούμε να βοηθήσουμε. Θα χρειαστείτε λίγες μέρες για να αποκτήσετε την
+    πλατφόρμα προσαρμοσμένη και έτοιμη προς χρήση, και στη συνέχεια θα πρέπει να
+    αφιερώνετε τουλάχιστον μία ώρα την εβδομάδα για την εποπτεία και διαχείριση
+    του ιστότοπου (αναλόγως και την επισκεψιμότητα και τον αριθμό των
+    αιτημάτων).
+  </p>
 
-  <p>Read more on the <a href="http://alaveteli.org">Alaveteli
-      website</a>, or <a href="mailto:hello@alaveteli.org">drop us an
-      email</a>.</p>
+  <p>
+    Διαβάστε περισσότερα στο
+    <a href="http://alaveteli.org">http://alaveteli.org</a> ή
+    <a href="mailto:hello@alaveteli.org">στείλτε μας e-mail</a>.
+  </p>
 
   <%= render partial: 'history' %>
 

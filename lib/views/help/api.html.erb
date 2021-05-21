@@ -3,88 +3,111 @@
 <%= render :partial => 'sidebar' %>
 
 <div id="left_column_flip" class="left_column_flip">
-  <h1><%=@title %></h1>
+  <h1><%= @title %></h1>
+
   <dl>
-    <dt>Introduction</dt>
+    <dt>Εισαγωγή</dt>
     <dd>
-      <p>This page explains how programmers can make other websites and software
-        interact with  <%= site_name %> via an "API".
+      <p>
+        Αυτή η σελίδα εξηγεί πώς οι προγραμματιστές/-ριες μπορούν να έχουν
+        πρόσβαση σε δεδομένα από το arthro5A.gr ή να επιτρέπουν σε άλλους
+        ιστότοπους και λογισμικά να αλληλεπιδρούν με τον ιστότοπο μέσω ενός
+        "API".
       </p>
 
-      <p> <%= site_name %> does not have a full API yet, but we are gradually adding
-        lots of things that are similar in use to an API as they are requested.
+      <p>
+        Το arthro5A.gr δεν διαθέτει πλήρες API, αλλά προσθέτουμε σταδιακά
+        χαρακτηριστικά που θα σας βοηθήσουν να επιτύχετε τα ίδια αποτελέσματα με
+        ένα API. Εάν υπάρχει κάτι ειδικό που θα θέλατε, μπορείτε να μας το
+        ζητήσετε και θα προσπαθήσουμε να το ιεραρχήσουμε ως προτεραιότητα.
       </p>
     </dd>
 
-    <dt>Linking to new requests</dt>
+    <dt>Tροφοδοσίες RSS (στην πραγματικότητα, Atom)</dt>
     <dd>
-      <p>To encourage your users to make links to a particular public authority, use URLs of the form
-        <%= link_to new_request_to_body_path(:url_name => "liverpool_city_council") , new_request_to_body_path(:url_name => "liverpool_city_council") %>.
-        These are the parameters you can add to those URLs, either in the URL or from a form.
-      </p>
-        <ul>
-          <li> <strong>title</strong> - default summary of the new request.</li>
-          <li> <strong>default_letter</strong> - default text of the body of the letter. The salutation (Dear...) and signoff (Yours...) are wrapped round this. </li>
-          <li> <strong>body</strong> - as an alternative to default_letter, this sets the default entire text of the request, so you can customise the salutation and signoff. </li>
-          <li> <strong>tags</strong> - space separated list of tags, so you can find and link up any requests made later, e.g. <em>openlylocal spending_id:12345</em>. The : indicates it is a machine tag. The values of machine tags may also include colons, useful for URIs.
-        </ul>
-    </dd>
-
-    <dt>RSS (actually, Atom) feeds</dt>
-    <dd>
-      <p>There are Atom feeds on most pages which list FOI requests, which you can
-        use to get updates and links in XML format. Find the URL of the Atom feed in
-        one of these ways:
-      </p>
-        <ul>
-          <li>Look for the <%= image_tag "feed-16.png", :alt => "RSS icon" %> RSS feed links.</li>
-          <li>Examine the <code>&lt;link rel="alternate" type="application/atom+xml"&gt;</code> tag in the head of the HTML. </li>
-          <li>Add <code>/feed</code> to the start of another URL.
-        </ul>
-
-        <p>In particular, even complicated search queries have Atom feeds.
-          You can do all sorts of things with them, such as query by authority, by file
-          type, by date range, or by status. See the <a href="<%= advanced_search_path %>">advanced search
-            tips</a> for details.
-        </p>
-    </dd>
-
-    <dt>JSON structured data</dt>
-    <dd>
-      <p>Quite a few pages have JSON versions, which let you download information about
-        objects in a structured form. Find them by:
+      <p>
+        Υπάρχουν ροές Atom στις περισσότερες σελίδες που απαριθμούν τα αιτήματα
+        FOI, τα οποία μπορείτε να χρησιμοποιήσετε για να λάβετε ενημερώσεις και
+        συνδέσμους σε μορφή XML. Βρείτε τη διεύθυνση URL της ροής Atom με έναν
+        από τους παρακάτω τρόπους:
       </p>
       <ul>
-        <li>Adding <code>.json</code> to the end of the URL. </li>
-        <li>Look for the <code>&lt;link rel="alternate" type="application/json"&gt;</code> tag in the head of the HTML. </li>
+        <li>
+          Αναζητήστε το <%= image_tag "feed-16.png", :alt => "RSS icon" %> RSS
+          σύνδεσμοι τροφοδοσίας.
+        </li>
+        <li>
+          Εξετάστε την ετικέτα
+          <code>&lt;link rel="alternate" type="application/atom+xml"&gt;</code>
+          στην κεφαλή του HTML.
+        </li>
+        <li>
+          Προσθήκη <code>/feed</code> στην αρχή μιας άλλης διεύθυνσης URL.
+        </li>
       </ul>
 
-      <p>Requests, users and authorities all have JSON versions containing basic
-        information about them. Every Atom feed has a JSON equivalent, containing
-        information about the list of events in the feed.
+      <p>
+        Ακόμα και περίπλοκα ερωτήματα αναζήτησης έχουν ροές Atom. Μπορείτε να
+        κάνετε κάθε είδους αναζήτηση, όπως αίτημα ανά δημόσια αρχή, ανά τύπο
+        αρχείου, ανά εύρος ημερομηνιών ή ανά κατάσταση αιτήματος (αναπάντητο, με
+        απάντηση κοκ). Ανατρέξτε στις
+        <a href="<%= advanced_search_path %>">συμβουλές σύνθετης αναζήτησης</a>
+        για λεπτομέρειες.
       </p>
     </dd>
 
-    <dt>Spreadsheet of all authorities</dt>
+    <dt>Δομημένα δεδομένα JSON</dt>
     <dd>
       <p>
-        A spreadsheet file listing every body in <%= site_name %> is available:
+        Αρκετές σελίδες έχουν εκδόσεις JSON, οι οποίες σας επιτρέπουν να λάβετε
+        πληροφορίες σχετικά με αντικείμενα σε δομημένη μορφή. Βρείτε τα από:
+      </p>
+      <ul>
+        <li>Προσθήκη <code>.json</code> στο τέλος της διεύθυνσης URL.</li>
+        <li>
+          Αναζητήστε την ετικέτα
+          <code>&lt;link rel="alternate" type="application/json"&gt;</code> tag
+          στην κεφαλή του HTML
+        </li>
+      </ul>
+
+      <p>
+        Τα αιτήματα, οι χρήστες/-ριες και οι φορείς έχουν όλες τις εκδόσεις JSON
+        που περιέχουν βασικές πληροφορίες σχετικά με αυτά. Κάθε ροή Atom έχει
+        ισοδύναμο JSON, που περιέχει πληροφορίες σχετικά με τη λίστα συμβάντων
+        στη ροή.
+      </p>
+    </dd>
+
+    <dt>Υπολογιστικό φύλλο (excel) όλων των δημοσίων αρχών</dt>
+    <dd>
+      <p>
+        Ένα αρχείο υπολογιστικού φύλλου (excel) που περιέχει κάθε δημόσια αρχή
+        που περιλαμβάνεται στο arthro5A.gr είναι διαθέσιμο εδώ:
         <%= link_to "all-authorities.csv", all_public_bodies_csv_path %>
       </p>
-
     </dd>
 
-
-    <dt> 5. Write API </dt>
+    <dt>Γράψτε API</dt>
     <dd>
       <p>
-        The write API is designed to be used by authorities to create their own requests in the system. The API is currently used by mySociety's <a href="https://github.com/mysociety/foi-register">FOI Register software</a> to support using Alaveteli as a disclosure log for all FOI activity at a particular public body. More technical information about the write API is available on the <a href="https://github.com/mysociety/alaveteli/wiki/API#write-api">Alaveteli wiki</a>.
+        Το API εγγραφής έχει σχεδιαστεί για χρήση από τους φορείς για τη
+        δημιουργία των δικών τους αιτημάτων στο σύστημα. Το API χρησιμοποιήθηκε
+        από το
+        <a href="https://github.com/mysociety/foi-register">Fλογισμικό FOI
+        Register</a> της mySociety για να υποστηρίξει τη χρήση του Alaveteli ως
+        αρχείου καταγραφής αποκάλυψης για όλες τις δραστηριότητες FOI σε έναν
+        συγκεκριμένο δημόσιο φορέα. Περισσότερες τεχνικές πληροφορίες σχετικά με
+        το API εγγραφής είναι διαθέσιμες στον ιστότοπο
+        <a href="http://www.alaveteli.org/">Alaveteli.org</a>.
       </p>
     </dd>
   </dl>
 
-  <p>Please <a href="<%= help_contact_path %>">contact us</a> if you need an API feature that isn't there yet. It's
-    very much a work in progress, and we do add things when people ask us to.</p>
+  <p>
+    <a href="<%= help_contact_path %>">Επικοινωνήστε με εμάς</a> εάν χρειάζεστε
+    μια λειτουργία που δεν παρέχουμε αυτήν τη στιγμή στο info@vouliwatch.gr.
+  </p>
 
   <%= render partial: 'history' %>
 

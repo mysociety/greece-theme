@@ -3,208 +3,158 @@
 <%= render :partial => 'sidebar' %>
 
 <div id="left_column_flip" class="left_column_flip">
-  <h1 id="officers"><%= @title %> <a href="#officers">#</a> </h1>
+  <h1 id="officers"><%= @title %> <a href="#officers">#</a></h1>
 
   <dl>
-
-    <dt id="top">I just got here from bottom of an FOI request, what is going on? <a href="#top">#</a> </dt>
-
-    <dd><p><%= site_name %> is a service run by a charity. It helps ordinary members
-        of the public make FOI requests, and easily track and share the responses.</p>
-
-      <p>The FOI request you received was made by someone using <%= site_name %>. You can
-        simply reply to the request as you would any other request from an individual.
-        The only difference is that your response will be automatically published on
-        the Internet.
-      </p>
-      <p>If you have privacy or other concerns, please read the answers below.
-        You might also like to read the <a
-        href="<%= help_about_path %>">introduction to <%= site_name %></a> to find out more about what
-        the site does from the point of view of a user. You can also search the
-        site to find the authority that you work for, and view the status of
-        any requests made using the site.
-
-      <p>Finally, we welcome comments and
-        thoughts from FOI officers, please <a href="<%= help_contact_path %>">get in touch</a>.
-      </p>
-    </dd>
-
-    <dt id="responses">Why are you publishing responses to FOI requests? <a href="#responses">#</a> </dt>
-
-    <dd>We think there are lots of benefits. Most importantly it will encourage the
-      public to be more interested and involved in the work of government. We
-      also hope that it will reduce the number of duplicate requests on any
-      subject that a public body will receive. Given that Freedom of Information
-      responses contain public information, which anybody could easily request
-      again from the public authority, we think there should be no reason not to
-      publish it widely.
-    </dd>
-
-    <dt id="realpeople">Are the people making requests real people? <a href="#realpeople">#</a> </dt>
-
-    <dd>Yes. For the purposes of keeping track of responses we use
-      computer-generated email addresses for each request. However, before
-      they can send a request, each user must register on the site with a
-      unique email address that we then verify. You can search this site and
-      find a page listing all requests that each person has made.
-    </dd>
-
-    <dt id="email_only">An email isn't a sufficient address for an FOI request! <a href="#email_only">#</a> </dt>
-
-    <dd>Yes it is. In the UK, this
-      <a href="https://www.whatdotheyknow.com/request/1142/response/2894/attach/5/20080806100741260.pdf">letter from the ICO to Rother District Council</a> gives guidance on the matter, specifically
-      in the context of requests made via WhatDoTheyKnow, a similar site to <%= site_name %>.
-    </dd>
-
-    <dt id="vexatious">Aren't you making lots of vexatious requests? <a href="#vexatious">#</a> </dt>
-
-    <dd><p><%= site_name %> is not making any requests. We are sending requests on
-        behalf of our users, who are real people making the requests. </p>
-      <p>Look at it like this - if lots of different people made requests from
-        different Hotmail email addresses, then you would not think that Microsoft were
-        making vexatious requests. It is exactly the same if lots of requests are made
-        via <%= site_name %>. Moreover, since all requests are public it is much easier
-        for you to see if one of our users is making vexatious requests. </p>
-
-    </dd>
-
-    <dt id="spam_problems">I can see a request on <%= site_name %>, but we never got it by email!<a href="#spam_problems">#</a> </dt>
-
-    <dd><p>If a request appears on the site, then we have attempted to send it to
-        the authority by email. Any delivery failure messages will automatically
-        appear on the site. You can check the address we're using with the "View FOI
-        email address" link which appears on the page for the authority. <a
-        href="<%= help_contact_path %>">Contact us</a> if there is a better address we can
-        use.</p>
-      <p>Requests are sometimes not delivered because they are quietly removed by
-        "spam filters" in the IT department of the authority. Authorities can make
-        sure this doesn't happen by asking their IT departments to "whitelist"
-        any email from <strong>@<%= AlaveteliConfiguration::incoming_email_domain %></strong>.
-        If you <a href="<%= help_contact_path %>">ask us</a> we will resend any request,
-        and/or give technical details of delivery so an IT department can chase
-        up what happened to the message.
-      </p>
-      <p>Finally, you can respond to any request from your web browser, without
-        needing any email, using the "respond to request" link at the bottom of
-        each request page.
-      </p>
-    </dd>
-
-    <dt id="days">How do you calculate the deadline shown on request pages?<a href="#days">#</a> </dt>
+    <dt id="top">
+      Μόλις έφτασα εδώ από το κάτω μέρος ενός αιτήματος κατάθεσης εγγράφων, τι
+      συμβαίνει;
+      <a href="#top">#</a>
+    </dt>
 
     <dd>
-
-      <p>The Freedom of Information Act says:</p>
-
-      <blockquote><p>A public authority must comply with section 1(1) <strong>promptly</strong> and
-      in any event not later than the twentieth working day following the date of
-      receipt.</p></blockquote>
-
-      <p>The nerdy detail of exactly how weekends are counted, and what happens if
-        the request arrives out of office hours, is just that - detail. What matters
-        here is that the law says authorities must respond <strong>promptly</strong>.</p>
-
-      <p>If you've got a good reason why the request is going to take a while to
-        process, requesters find it really helpful if you can send a quick email with a
-        sentence or two saying what is happening. </p>
-
-      <p>FOI officers often have to do a lot of <strong>hard work</strong> to answer
-        requests, and this is hidden from the public. We think it would help everyone
-        to have more of that complexity visible.</p>
-
+      <p>
+        Το arthro5A.gr είναι μια υπηρεσία που προσφέρεται από το Vouliwatch και
+        είναι μη κερδοσκοπική. Βοηθά τα μέλη του κοινού να υποβάλλουν αιτήματα
+        κατάθεσης εγγράφων και να παρακολουθούν και να μοιράζονται τις
+        απαντήσεις με τρόπο απλό.
+      </p>
+      <p>
+        Το αίτημα κατάθεσης εγγράφων που λάβατε υποβλήθηκε από κάποιον/-α που
+        χρησιμοποιεί το athro5A.gr. Μπορείτε απλώς να απαντήσετε στο αίτημα όπως
+        θα κάνατε σε οποιοδήποτε άλλο αίτημα ενός/μίας πολίτη. Η μόνη διαφορά
+        είναι ότι η απάντησή σας θα δημοσιευτεί αυτόματα στο Διαδίκτυο.
+      </p>
+      <p>
+        Εάν έχετε απορίες σχετικά με την ιδιωτικότητα ή άλλα ζητήματα, διαβάστε
+        τις παρακάτω απαντήσεις.
+      </p>
+      <p>
+        Ίσως θέλετε επίσης να διαβάσετε την
+        <a href="<%= help_about_path %>">εισαγωγή στο arhtro5A.gr</a> για να
+        μάθετε περισσότερα σχετικά με το τι προσφέρει η πλατφόρμα στους/-ις
+        χρήστες/-ριες.
+      </p>
+      <p>
+        Μπορείτε επίσης να πραγματοποιήσετε αναζήτηση στην πλατφόρμα για να
+        βρείτε την Αρχή για την οποία εργάζεστε και να δείτε την κατάσταση τυχόν
+        αιτημάτων που υποβάλλονται μέσω του ιστότοπου.
+      </p>
+      <p>
+        Τέλος, καλωσορίζουμε τα σχόλια και τις σκέψεις των διαχειριστών/-ριών
+        αιτημάτων κατάθεσης εγγράφων εκ μέρους του Δημοσίου.
+        <a href="<%= help_contact_path %>">Παρακαλούμε επικοινωνήστε μαζί</a>
+        μας για οτιδήποτε περαιτέρω.
+      </p>
     </dd>
 
-    <dt id="days2">But really, how do you calculate the deadline?<a href="#days2">#</a> </dt>
+    <dt id="responses">
+      Γιατί δημοσιεύετε απαντήσεις σε αιτήματα κατάθεσης εγγράφων και πρόσβασης
+      στη δημόσια πληροφορία;
+      <a href="#responses">#</a>
+    </dt>
 
     <dd>
+      <p>
+        Πιστεύουμε ότι υπάρχουν πολλά οφέλη από αυτό. Το πιο σημαντικό είναι ότι
+        οι πολίτες θα ενθαρρυνθούν να ενδιαφέρονται περισσότερο και να
+        συμμετέχουν στην παρακολούθηση του δημοσίου. Ελπίζουμε επίσης ότι θα
+        μειωθεί ο αριθμός των διπλών αιτημάτων για οποιοδήποτε θέμα τυχόν μπορεί
+        να λάβει ένας δημόσιος φορέας.
+      </p>
+      <p>
+        Όσοι/-ες αναλαμβάνουν δράση μετά την δημοσίευση έγγραφου υλικού και
+        δημοσίων πληροφοριών, όπως η άσκηση πίεσης στους/-ις εκλεγμένους/-ες
+        αντιπροσώπους μας ή η δημιουργία άρθρων, μπορούν να αναφέρουν το
+        arthro5A.gr και την πηγή των πληροφοριών στις οποίες βασίζονται.
+      </p>
+      <p>
+        Δεδομένου ότι οι απαντήσεις σε αιτήματα κατάθεσης εγγράφων περιέχουν
+        δημόσιες πληροφορίες, τις οποίες ο/η καθένας/καθεμία μας θα μπορούσε
+        εύκολα να ζητήσει ξανά από τη δημόσια αρχή, πιστεύουμε ότι είναι
+        σημαντικό να τις δημοσιεύσουμε και προωθήσουμε ευρέως.
+      </p>
+    </dd>
 
-      <p>Please read the answer to the previous question first. Legally, authorities
-        must respond <strong>promptly</strong> to FOI requests. If they fail to do that,
-        it is best if they show the hard work they are doing by explaining what is
-        taking the extra time to do.
+    <dt id="realpeople">
+      Είναι οι άνθρωποι που υποβάλουν αιτήματα πραγματικοί άνθρωποι;
+      <a href="#realpeople">#</a>
+    </dt>
+
+    <dd>
+      Ναι. Για λόγους παρακολούθησης των απαντήσεων, χρησιμοποιούμε διευθύνσεις
+      ηλεκτρονικού ταχυδρομείου που δημιουργούνται από υπολογιστή. Ωστόσο,
+      προτού μπορέσει να υποβάλει ένα αίτημα, κάθε χρήστης/-ρια πρέπει να
+      εγγραφεί στον ιστότοπο με μια μοναδική διεύθυνση email που στη συνέχεια
+      επαληθεύουμε. Μπορείτε να κάνετε αναζήτηση σε αυτόν τον ιστότοπο και να
+      βρείτε μια σελίδα με όλα τα αιτήματα που έχει υποβάλει κάθε πολίτης.
+    </dd>
+
+    <dt id="spam_problems">
+      Βλέπω ένα αίτημα στο arthro5A.gr, αλλά δεν το λάβαμε ποτέ μέσω email!
+      <a href="#spam_problems">#</a>
+    </dt>
+
+    <dd>
+      <p>
+        Εάν εμφανιστεί ένα αίτημα στον ιστότοπο, τότε προσπαθήσαμε να το
+        στείλουμε στην αρχή μέσω email. Θα δείτε μια μικρή πράσινη ένδειξη στα
+        αιτήματα που έχουν παραληφθεί με βεβαιότητα από τους διακομιστές
+        αλληλογραφίας της δημόσιας αρχής ή του φορέα και τα τυχόν μηνύματα
+        αποτυχίας παράδοσης θα εμφανίζονται αυτόματα στον ιστότοπο. Μπορείτε να
+        ελέγξετε τη διεύθυνση που χρησιμοποιούμε με το σύνδεσμο "Προβολή
+        διεύθυνσης email ΑΚΕ" που εμφανίζεται στη σελίδα για την αρχή.
+        <a href="<%= help_contact_path %>">Επικοινωνήστε μαζί μας</a> εάν
+        υπάρχει καλύτερη ηλεκτρονική διεύθυνση (email) που μπορούμε να
+        χρησιμοποιήσουμε.
+      </p>
+      <p>
+        Μερικές φορές τα αιτήματα δεν παραδίδονται επειδή καταργούνται από
+        «φίλτρα ανεπιθύμητης αλληλογραφίας» (αντιμετωπίζονται ως spam) από το
+        τμήμα πληροφορικής της αρχής (IT). Οι δημόσιες αρχές και φορείς μπορούν
+        να διασφαλίσουν ότι αυτό δεν θα συμβεί ζητώντας από τα τμήματα
+        πληροφορικής τους να «επιτρέπουν» οποιοδήποτε email από το
+        <strong>@<%= AlaveteliConfiguration.incoming_email_domain %></strong>.
+        Εάν μας <a href="<%= help_contact_path %>">το ζητήσετε</a> θα
+        αποστείλουμε ξανά οποιοδήποτε αίτημα ή / και θα δώσουμε τεχνικές
+        λεπτομέρειες παράδοσης, ώστε το τμήμα πληροφορικής να μπορεί να
+        παρακολουθήσει την πορεία αυτού του μηνύματος.
+      </p>
+      <p>
+        Τέλος, μπορείτε να απαντήσετε σε οποιοδήποτε αίτημα από το πρόγραμμα
+        περιήγησής σας στο Web, χωρίς να χρειάζεται κανένα email,
+        χρησιμοποιώντας το σύνδεσμο «Απάντηση σε αίτημα» στο κάτω μέρος κάθε
+        σελίδας αιτήματος.
+      </p>
+    </dd>
+
+    <dt id="days">
+      Πως υπολογίζεται η προθεσμία για απάντηση στα αιτήματα;
+      <a href="#days">#</a>
+    </dt>
+
+    <dd>
+      <p>
+        Σύμφωνα με τον νόμο, οι δημόσιες αρχές πρέπει να ανταποκρίνονται άμεσα
+        στα αιτήματα. Ακόμα κι αν δεν είναι άμεσα, σε όλες σχεδόν τις
+        περιπτώσεις πρέπει να απαντήσουν εντός 20 ημερολογιακών ημερών.
+        Παράταση:
       </p>
 
-      <p>That said, <%= site_name %> does show the maximum legal deadline
-        for response on each request. Here's how we calculate it.</p>
-
-      <ul>
-
-        <li>If the day we deliver the request by email is a working day, we count that
-          as "day zero", even if it was delivered late in the evening. Days end at
-          midnight.  We then count the next working day as "day one", and so on up to
-          <strong><%= AlaveteliConfiguration::reply_late_after_days %> working days</strong>.</li>
-
-        <li>If the day the request email was delivered was a non-working day, we count
-          the next working day as "day one". Delivery is delivery, even if it happened on
-          the weekend. Some authorities disagree with this, our lawyer disagrees with them. </li>
-
-        <li>Requesters are encouraged to mark when they have <strong>clarified</strong>
-          their request so the clock resets, but sometimes they get this wrong. If you
-          see a problem with a particular request, let us know and we'll fix it.</li>
-      </ul>
-
-      <p>The date thus calculated is shown on requests with the text "By law,
-        Liverpool City Council should normally have responded by...".
-      </p>
-
+      <blockquote>
+        <p>
+          Η προθεσμία αυτή μπορεί να παραταθεί μέχρι είκοσι (20) επιπλέον ημέρες
+          από τη λήξη του πρώτου εικοσαημέρου για αιτήσεις που χαρακτηρίζονται
+          από τον φορέα ως περίπλοκες ή μεγάλης κλίμακας. Στην περίπτωση αυτή
+          γνωστοποιούνται στον αιτούντα, μέσα σε δέκα (10) ημέρες από την
+          παραλαβή της αίτησης.
+        </p>
+        <footer>— <cite>Άρθρο 62 Ν. 4727/2020</cite></footer>
+      </blockquote>
     </dd>
-
-    <dt id="large_file">How can I send a large file, which won't go by email?<a href="#large_file">#</a> </dt>
-
-    <dd>Instead of email, you can respond to a request directly from your web
-      browser, including uploading a file. To do this, choose "respond to request" at
-      the bottom of the request's page. <a href="<%= help_contact_path %>">Contact us</a> if it
-      is too big for even that (more than, say, 50Mb).
-    </dd>
-
-    <dt id="names">Why do you publish the names of civil servants and the text of emails? <a href="#names">#</a> </dt>
-
-    <dd>We consider what officers or servants do in the course of their employment
-      to be public information. We will only remove content in exceptional
-      circumstances, see our <a href="<%= help_privacy_path(:anchor => 'takedown') %>">take down policy</a>.
-    </dd>
-
-    <dt id="mobiles">Do you publish email addresses or mobile phone numbers? <a href="#mobiles">#</a> </dt>
-
-    <dd><p>To prevent spam, we automatically remove most emails and some mobile numbers from
-        responses to requests.  Please <a href="<%= help_contact_path %>">contact us</a> if we've
-        missed one.
-        For technical reasons we don't always remove them from attachments, such as certain PDFs.</p>
-    <p>If you need to know what an address was that we've removed, please <a
-      href="<%= help_contact_path %>">get in touch with us</a>.
-      <% if AlaveteliConfiguration::enable_annotations %>
-        Occasionally, an email address forms an important part of a response
-        and we will post it up in an obscured form in an annotation.
-      <% end %>
-    </p>
-    </dd>
-
-    <dt id="copyright"><a id="commercial"></a>What is your policy on copyright of documents?<a href="#copyright">#</a> </dt>
-
-    <dd>Our Freedom of Information law is "applicant blind", so anyone in the
-      world can request the same document and get a copy of it.
-
-      If you think our making a document available on the internet infringes your
-      copyright, you may <a href="<%= help_contact_path %>">contact us</a> and ask us
-      to take it down.  However, to save tax payers' money by preventing duplicate
-      requests, and for good public relations, we'd advise you not to do that.
-    </dd>
-
-    <dt id="allowed_responses">My response to an old request on <%= site_name %> has been bounced!<a href="#allowed_responses">#</a> </dt>
-      <dd>After six months of inactivity, <%= site_name %> limits who can respond to a request to stop
-      spammers targeting old requests. At that point, the request can only be responded to by someone who's
-      from the authority. After twelve months, the request is closed to responses from anyone. If you need an
-      old request to be re-opened so that you can respond to it, please <a href="<%= help_contact_path %>">
-      contact us</a>.
-      </dd>
-
-
   </dl>
 
-  <p><strong>If you haven't already</strong>, read <a href="<%= help_about_path %>">the introduction</a> --&gt;
-    <br><strong>Otherwise</strong>, the <a href="<%= help_credits_path %>">credits</a> or the <a href="<%= help_api_path %>">programmers API</a> --&gt;
+  <%= render partial: 'history' %>
 
-    <%= render partial: 'history' %>
-
-    <div id="hash_link_padding"></div>
+  <div id="hash_link_padding"></div>
 </div>

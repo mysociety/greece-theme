@@ -1,292 +1,461 @@
-<% @title = "Making requests" %>
+<% @title = "Κάνοντας αιτήματα" %>
 
 <%= render :partial => 'sidebar' %>
+
 <div id="left_column_flip" class="left_column_flip">
   <h1 id="making_requests"><%= @title %> <a href="#making_requests">#</a></h1>
+
   <dl>
-
-    <dt id="which_authority">I'm not sure which authority to make my request to, how can I find out? <a href="#which_authority">#</a> </dt>
+    <dt id="which_authority">
+      Δεν είμαι σίγουρος/-η σε ποια αρχή να υποβάλω το αίτημά μου, πως μπορώ να
+      μάθω;
+      <a href="#which_authority">#</a>
+    </dt>
 
     <dd>
-      <p>It can be hard to untangle government's complicated structure, and work out
-        who holds the information that you want. Here are a few tips:
+      <p>
+        Μπορεί να είναι δύσκολο να ξεδιαλύνετε την περίπλοκη δομή της κυβέρνησης
+        και του δημοσίου και να μάθετε ποια αρχή διατηρεί τις πληροφορίες που
+        θέλετε. Ακολουθούν μερικές συμβουλές:
       </p>
       <ul>
-        <li>Browse or search <%= site_name %> looking for similar requests to yours.</li>
-        <li>When you've found an authority you think might have the information, use
-          the "home page" link on the right hand side of their page to check what they do
-          on their website.</li>
-        <li>Contact the authority by phone or email to ask if they hold the kind of
-          information you're after.</li>
-        <li>Don't worry excessively about getting the right authority. If you get it
-          wrong, they ought to advise you who to make the request to instead.
+        <li>
+          Περιηγηθείτε ή αναζητήστε στο <%= site_name %> παρόμοια αιτήματα με τα
+          δικά σας.
         </li>
-        <li>If you've got a thorny case, please <a href="<%= help_contact_path %>">contact us</a> for help.</li>
-      </ul>
-
-    </dd>
-
-
-
-    <dt id="missing_body">You're missing the public authority that I want to request from! <a href="#missing_body">#</a> </dt>
-
-    <dd>
-      <p>Please <a href="<%= new_change_request_path %>">contact us</a> with the name of the public authority and,
-        if you can find it, their contact email address for Freedom of Information requests.
-      </p>
-      <p>If you'd like to help add a whole category of public authority to the site, we'd love
-        to hear from you too.
-      </p>
-
-    </dd>
-
-    <dt id="authorities">Why do you include some authorities that aren't formally subject to FOI?<a href="#authorities">#</a> </dt>
-
-    <dd>
-      <p><%= site_name %> lets you make requests for information to a range of
-        organisations:</p>
-
-      <ul>
-        <li> Those formally subject to the FOI Act</li>
-        <li> Those formally subject to the Environmental Regulations (a less well
-          defined group)</li>
-        <li> Those which voluntarily comply with the FOI Act</li>
-        <li> Those which aren't subject to the Act but we think should be, on grounds
-          such as them having significant public responsibilities.
+        <li>
+          Όταν βρείτε μια αρχή που πιστεύετε ότι μπορεί να έχει τις πληροφορίες,
+          χρησιμοποιήστε τον σύνδεσμο "αρχική σελίδα" στη δεξιά πλευρά της
+          σελίδας τους για να ελέγξετε με τι ασχολούνται στον ιστότοπό τους.
+        </li>
+        <li>
+          Επικοινωνήστε με την αρχή μέσω τηλεφώνου ή ηλεκτρονικού ταχυδρομείου
+          για να ρωτήσετε αν διατηρούν το είδος των πληροφοριών που αναζητάτε.
+          Εάν κάνετε λάθος, θα πρέπει να σας συμβουλέψουν σε ποιον φορέα να
+          υποβάλετε το αίτημα.
+        </li>
+        <li>
+          Εάν αντιμετωπίζετε δυσκολίες,
+          <a href="<%= help_contact_path %>">επικοινωνήστε μαζί μας</a> για
+          βοήθεια.
         </li>
       </ul>
-
-      <p>In the last case, we're using the site to lobby for expansion of the
-        scope of the FOI Act. Even if an organisation is not legally obliged to respond
-        to an FOI request, they can still do so voluntarily.
-      </p>
-
     </dd>
 
-    <dt id="focused">Why must I keep my request focused?<a href="#focused">#</a> </dt>
+    <dt id="missing_body">
+      Λείπει η δημόσια αρχή στην οποία θέλω να υποβάλω αίτημα κατάθεσης εγγράφων
+      και πρόσβασης στη δημόσια πληροφορία!
+      <a href="#missing_body">#</a>
+    </dt>
 
     <dd>
-
       <p>
-        Please put in your request only what is needed so that someone can
-        easily identify what information you are asking for. Please do
-        <i>not</i> include any of the following:
+        Παρακαλούμε <a href="<%= new_change_request_path %>">επικοινωνήστε μαζί
+        μας</a> δηλώνοντας το όνομα της δημόσιας αρχής και, αν μπορείτε να τη
+        βρείτε, τη διεύθυνση ηλεκτρονικού ταχυδρομείου επικοινωνίας τους για
+        αιτήματα κατάθεσης εγγράφων.
       </p>
-
-      <ul>
-        <li>arguments about your cause</li>
-        <li>statements that could defame or insult others</li>
-      </ul>
-
       <p>
-        If you do, we may have to remove your request to avoid problems with
-        libel law, which is a pain for both you and us. Short, succinct messages
-        make it easier for authorities to be clear what information you are
-        requesting, which means you will get a reply more quickly.
+        Αν θέλετε να βοηθήσετε να προσθέσουμε μια ολόκληρη κατηγορία δημόσιας
+        αρχής στη λίστα της πλατφόρμας, θα καλωσορίσουμε την προσθήκη σας.
       </p>
-
-      <p>
-        If you want information to support an argument or campaign, Freedom of
-        Information is a powerful tool. Although you may not use this site to
-        run your campaign, we encourage you to use it to get the information you
-        need. We also encourage to run your campaign elsewhere - one effective
-        and very easy way is to <%= link_to 'start your own blog',
-          "http://wordpress.com/"%>.
-        <% if AlaveteliConfiguration::enable_annotations %>
-          You are welcome to link to your campaign from this site in an
-          annotation to your request (you can make annotations after submitting
-          the request).
-        <% end %>
-      </p>
-
     </dd>
 
-    <dt id="fees">Does it cost me anything to make a request?<a href="#fees">#</a> </dt>
+    <dt id="authorities">
+      Γιατί συμπεριλαμβάνετε ορισμένες αρχές που δεν υπόκεινται επίσημα σε
+      αιτήματα κατάθεσης εγγράφων και πρόσβασης στη δημόσια πληροφορία;
+      <a href="#authorities">#</a>
+    </dt>
 
     <dd>
+      <p>
+        Το <%= site_name %> σας επιτρέπει να υποβάλλετε αιτήματα για πληροφορίες
+        σε μια σειρά οργανισμών, όπως αυτοί προβλέπονται από το Άρθρο 60 του ν.
+        4727/2020.
+      </p>
 
+      <p>
+        Για τους σκοπούς του παρόντος Κεφαλαίου ισχύουν οι ακόλουθοι ορισμοί:
+      </p>
+
+      <ol>
+        <li>
+          «Φορείς του δημόσιου τομέα»: οι κρατικές αρχές, κεντρικές και
+          περιφερειακές, οι ανεξάρτητες διοικητικές αρχές, οι Ο.Τ.Α. πρώτου και
+          δεύτερου βαθμού, τα λοιπά νομικά πρόσωπα δημοσίου δικαίου, οι
+          οργανισμοί δημοσίου δικαίου κατά την έννοια της παρ. 2 και οι ενώσεις
+          που σχηματίζονται από μία ή περισσότερες από τις ανωτέρω αρχές ή από
+          έναν ή περισσότερους από τους οργανισμούς δημοσίου δικαίου του
+          παρόντος,
+        </li>
+        <li>
+          «Οργανισμός δημοσίου δικαίου»: κάθε οργανισμός που έχει όλα τα
+          ακόλουθα χαρακτηριστικά:
+          <ol style="list-style-type: lower-greek">
+            <li>
+              έχει συσταθεί με συγκεκριμένο σκοπό την κάλυψη αναγκών γενικού
+              συμφέροντος, χωρίς βιομηχανικό ή εμπορικό χαρακτήρα,
+            </li>
+            <li>
+              έχει νομική προσωπικότητα, και (γ) είτε χρηματοδοτείται για τη
+              δραστηριότητά του κατά κύριο λόγο από τον κρατικό προϋπολογισμό,
+              τους Ο.Τ.Α. ή άλλους οργανισμούς δημοσίου δικαίου, είτε η
+              διαχείρισή του υπόκειται στην εποπτεία των ανωτέρω αρχών ή
+              οργανισμών, είτε διοικείται, διευθύνεται ή εποπτεύεται από όργανο,
+              του οποίου περισσότερα από τα μισά μέλη διορίζονται από το
+              Δημόσιο, τους Ο.Τ.Α. ή άλλους οργανισμούς δημοσίου δικαίου,
+            </li>
+          </ol>
+        </li>
+        <li>
+          «δημόσια επιχείρηση»: κάθε επιχείρηση, η οποία δραστηριοποιείται στους
+          τομείς που ορίζονται στην περ. β΄ της παρ. 3 του άρθρου 59 και στην
+          οποία οι φορείς του δημόσιου τομέα μπορούν να ασκούν άμεσα ή έμμεσα
+          αποφασιστική επιρροή είτε λόγω κυριότητας είτε λόγω χρηματοοικονομικής
+          τους συμμετοχής σε αυτή είτε δυνάμει των κανόνων που την διέπουν. Η
+          ύπαρξη αποφασιστικής επιρροής των φορέων του δημόσιου τομέα
+          τεκμαίρεται σε οποιαδήποτε από τις ακόλουθες περιπτώσεις, στις οποίες
+          οι φορείς αυτοί, άμεσα ή έμμεσα:
+          <ol style="list-style-type: lower-greek">
+            <li>
+              κατέχουν την πλειοψηφία του εγγεγραμμένου κεφαλαίου της
+              επιχείρησης,
+            </li>
+            <li>
+              ελέγχουν την πλειοψηφία των ψήφων που συνδέονται με τις μετοχές
+              που εκδίδει η επιχείρηση,
+            </li>
+            <li>
+              μπορούν να διορίζουν περισσότερα από τα μισά μέλη του οργάνου
+              διοίκησης, διεύθυνσης ή εποπτείας της επιχείρησης.
+            </li>
+          </ol>
+        </li>
+      </ol>
+    </dd>
+
+    <dt id="focused">
+      Γιατί πρέπει να κρατήσω το αίτημά μου συγκεκριμένο;
+      <a href="#focused">#</a>
+    </dt>
+
+    <dd>
+      <p>
+        Παρακαλώ όταν υποβάλετε το αίτημά σας, να αναφέρετε μόνο ό,τι
+        χρειάζεται, ώστε κάποιος/-α να μπορεί να αναγνωρίσει εύκολα ποιες
+        πληροφορίες ζητάτε.
+      </p>
+
+      <p>
+        Μην συμπεριλάβετε επιχειρήματα σχετικά με τον σκοπό σας ή δηλώσεις που
+        θα μπορούσαν να δυσφημίσουν ή να προσβάλουν άλλα πρόσωπα. Εάν το κάνετε,
+        ίσως χρειαστεί να καταργήσουμε το αίτημά σας για να αποφύγουμε
+        προβλήματα με το νόμο περί δυσφήμισης, κάτι που θα είναι αμήχανο και
+        επώδυνο τόσο για εσάς όσο και για εμάς.
+      </p>
+
+      <p>
+        Σύντομα μηνύματα διευκολύνουν τις αρχές να καταλάβουν ποιες πληροφορίες
+        ζητάτε, κάτι που αυξάνει τις πιθανότητες να λάβετε πιο άμεσα απάντηση.
+      </p>
+
+      <p>
+        Εάν θέλετε οι πληροφορίες που αιτείστε να χρησιμοποιηθούν για την
+        υποστήριξη μιας εκστρατείας, η χρήση του δικαιώματος στην πληροφόρηση
+        είναι ένα ισχυρό εργαλείο. Είστε ευπρόσδεκτοι/-ες να συνδέσετε την
+        καμπάνια σας με την πλατφόρμα μας arthro5A.gr σε έναν σχολιασμό στο
+        αίτημά σας (μπορείτε να κάνετε σχολιασμούς μετά την υποβολή του
+        αιτήματος).
+      </p>
+    </dd>
+
+    <dt id="fees">
+      Μου κοστίζει τίποτα για να κάνω ένα αίτημα; <a href="#fees">#</a>
+    </dt>
+
+    <dd>
       <p>Making an FOI request is nearly always free.</p>
 
-      <p>Authorities often include unnecessary, scary, boilerplate in
-        acknowledgement messages saying they "may" charge a fee. Ignore such notices.
-        They hardly ever will actually charge a fee.  If they do, they can only charge you if
-        you have specifically agreed in advance to pay.  <a
-        href="http://www.ico.gov.uk/upload/documents/library/freedom_of_information/practical_application/chargingafee.pdf">More
-        details</a> from the Information Commissioner.
+      <p>
+        <strong
+          >Η υποβολή αιτήματος κατάθεσης εγγράφων είναι (σχεδόν) πάντα δωρεάν.
+          Εξαιρετικά</strong
+        >, επιτρέπεται η ανάκτηση του οριακού κόστους για την αναπαραγωγή,
+        παροχή και διάδοση των εγγράφων, την ανωνυμοποίηση των δεδομένων
+        προσωπικού χαρακτήρα, καθώς και των μέτρων που λαμβάνονται για την
+        προστασία των εμπορικά εμπιστευτικών πληροφοριών μέσω επιβολής τελών
+        στους ενδιαφερομένους.
       </p>
 
-      <p>Sometimes an authority will refuse your request, saying that the cost
-        of handling it exceeds £600 (for central government) or £450 (for all other
-        public authorities). At this point you can refine your
-        request. e.g. it would be much cheaper for an authority to tell you the amount
-        spent on marshmallows in the past year than in the past ten years.
+      <p>
+        <strong>Άρθρο 64</strong>
       </p>
 
-    </dd>
-
-
-
-    <dt id="quickly_response">How quickly will I get a response? <a href="#quickly_response">#</a> </dt>
-
-    <dd>
-      <p>By law, public authorities must respond <strong>promptly</strong> to
-        requests.
+      <p>
+        <strong
+          >Αρχές που διέπουν τη χρέωση (άρθρο 6 της Οδηγίας (ΕΕ)
+          2019/1024)</strong
+        >
       </p>
 
-      <p>Even if they are not prompt, in nearly all cases they must respond within
-        20 working days. If you had to clarify your request, or they are a school,
-        or one or two other cases, then they may have more time
-        (<a href="<%= help_officers_path(:anchor => 'days') %>">full details</a>).
-      </p>
-      <p><%= site_name %> will email you if you don't get a timely response.  You can
-        then send the public authority a message to remind them, and tell them if they
-        are breaking the law.</p>
-
-    </dd>
-
-    <dt id="no_response">What if I never get a response?<a href="#no_response">#</a> </dt>
-
-    <dd>
-      <p>There are several things you can do if you never get a response.</p>
-      <ul>
-        <li>Sometimes there has been a genuine problem and the authority never
-          received the request. It is worth telephoning the authority and politely
-          checking that they received the request. It was sent to them by email.
+      <ol>
+        <li>
+          Η περαιτέρω χρήση των εγγράφων γίνεται καταρχήν δωρεάν. Εξαιρετικά,
+          επιτρέπεται η ανάκτηση του οριακού κόστους για την αναπαραγωγή, παροχή
+          και διάδοση των εγγράφων, την ανωνυμοποίηση των δεδομένων προσωπικού
+          χαρακτήρα, καθώς και των μέτρων που λαμβάνονται για την προστασία των
+          εμπορικά εμπιστευτικών πληροφοριών μέσω επιβολής τελών στους
+          ενδιαφερομένους.
         </li>
-        <li>If they have not received it, the problem is most likely due to
-          "spam filters". Refer the authority to the measures in the answer
-          '<a href="<%= help_officers_path(:anchor => 'spam_problems') %>">I can see a request on <%= site_name %>, but we never got it by email!</a>'
-          in the FOI officers section of this help.
+        <li>
+          Κατ’ εξαίρεση, η παρ. 1 δεν εφαρμόζεται:
+          <ol style="list-style-type: lower-greek">
+            <li>
+              στους φορείς του δημόσιου τομέα, για τους οποίους προβλέπεται να
+              καλύπτουν οι ίδιοι ένα ουσιώδες μέρος του κόστους εκτέλεσης της
+              δημόσιας αποστολής τους από ίδια έσοδα,
+            </li>
+            <li>
+              σε βιβλιοθήκες, συμπεριλαμβανομένων των βιβλιοθηκών των Ανώτατων
+              Εκπαιδευτικών Ιδρυμάτων, μουσεία και αρχεία,
+            </li>
+            <li>
+              σε δημόσιες επιχειρήσεις κατά την έννοια της περ. 3 του άρθρου 60.
+            </li>
+          </ol>
         </li>
-        <li>If you're still having no luck, then you can ask for an internal review,
-          and then complain to the Information Commissioner about the authority.
-          Read our page '<a href="<%= help_general_path(:template => 'unhappy') %>">Unhappy about the response you got?</a>'.
-      </ul>
+        <li>
+          Μέσω της Ενιαίας Ψηφιακής Πύλης της Δημόσιας Διοίκησης (gov.gr)
+          δημοσιεύεται και επικαιροποιείται, σε ετήσια βάση, ο κατάλογος των
+          φορέων που εμπίπτουν στις εξαιρέσεις της παρ. 2.
+        </li>
+        <li>
+          Στις περ. α΄ και γ΄ της παρ. 2, το ύψος των τελών υπολογίζεται με
+          αντικειμενικά, διαφανή και επαληθεύσιμα κριτήρια, με βάση το κόστος
+          που προκύπτει κατά τη διάρκεια της ετήσιας λογιστικής περιόδου και
+          σύμφωνα με τις λογιστικές αρχές που εφαρμόζονται στους οικείους
+          φορείς. Τα συνολικά έσοδα από τη διάθεση και την άδεια περαιτέρω
+          χρήσης των εν λόγω εγγράφων εντός της εκάστοτε λογιστικής περιόδου δεν
+          επιτρέπεται να υπερβαίνουν το κόστος συλλογής, παραγωγής,
+          αναπαραγωγής, διάδοσής τους και αποθήκευσης των δεδομένων,
+          συμπεριλαμβανομένης μιας εύλογης απόδοσης της επένδυσης, και, κατά
+          περίπτωση, το κόστος ανωνυμοποίησης των δεδομένων προσωπικού χαρακτήρα
+          και των μέτρων που λαμβάνονται για την προστασία των εμπορικά
+          εμπιστευτικών πληροφοριών.
+        </li>
+        <li>
+          Όταν οι βιβλιοθήκες, συμπεριλαμβανομένων των βιβλιοθηκών Ανώτατων
+          Εκπαιδευτικών Ιδρυμάτων, τα μουσεία και τα αρχεία επιβάλλουν τέλη, τα
+          συνολικά έσοδα από τη διάθεση και την άδεια περαιτέρω χρήσης των
+          εγγράφων εντός της εκάστοτε λογιστικής περιόδου δεν επιτρέπεται να
+          υπερβαίνουν το κόστος συλλογής, παραγωγής, αναπαραγωγής, διάδοσης,
+          αποθήκευσης των δεδομένων, συντήρησης, εκκαθάρισης δικαιωμάτων και,
+          κατά περίπτωση, το κόστος ανωνυμοποίησης των δεδομένων προσωπικού
+          χαρακτήρα και των μέτρων που λαμβάνονται για την προστασία των
+          εμπορικά εμπιστευτικών πληροφοριών, συμπεριλαμβανομένης μιας εύλογης
+          απόδοσης της επένδυσης. Το ύψος των τελών υπολογίζεται με βάση το
+          κόστος που προκύπτει κατά τη διάρκεια της ετήσιας λογιστικής περιόδου
+          και σύμφωνα με τις λογιστικές αρχές που εφαρμόζονται στους οικείους
+          φορείς.
+        </li>
+        <li>
+          Σε κάθε περίπτωση, η περαιτέρω χρήση:
+          <ol style="list-style-type: lower-greek">
+            <li>
+              των συνόλων δεδομένων υψηλής αξίας, ο κατάλογος των οποίων
+              καθορίζεται σύμφωνα με την παρ. 1 του άρθρου 14 της Οδηγίας (ΕΕ)
+              2019/1024, υπό την επιφύλαξη των παρ. 2, 3 και 4 του άρθρου 72 και
+            </li>
+            <li>των ερευνητικών δεδομένων, είναι δωρεάν.</li>
+          </ol>
+        </li>
+      </ol>
     </dd>
 
-    <dt id="not_satifised">What if I'm not satisfied with the response? <a href="#not_satifised">#</a> </dt>
-    <dd>If you didn't get the information you asked for, or you didn't get it in time,
-      then read our page '<a href="<%= help_general_path(:template => 'unhappy') %>">Unhappy about the response you got?</a>'.
-    </dd>
-
-    <dt id="reuse">It says I can't re-use the information I got!<a href="#reuse">#</a> </dt>
-    <dd>
-      <p>Authorities often add legal boilerplate about the
-        "<a href="http://www.opsi.gov.uk/si/si2005/20051515">Re-Use of Public Sector
-          Information Regulations 2005</a>", which at first glance implies you may not
-        be able do anything with the information.
-      </p>
-
-      <p>You can, of course, write articles about the information or summarise it, or
-        quote parts of it. We also think you should feel free to republish the
-        information in full, just as we do, even though in theory you might not be
-        allowed to do so.  See <a href="<%= help_officers_path(:anchor => 'copyright') %>">our policy on copyright</a>.</p>
-
-    </dd>
-
-    <dt id="ico_help">Can you tell me more of the nitty gritty about the process of making requests? <a href="#ico_help">#</a> </dt>
-
-    <dd>
-      <p>Have a look at the
-        <a href="http://www.ico.gov.uk/for_the_public/access_to_official_information.aspx">access to official information</a>
-        pages on the Information Commissioner's website.</p>
-
-      <p>If you're requesting information from a Scottish public authority,
-        the process is very similar. There are differences around time
-        limits for compliance.
-        See the <a href="http://www.itspublicknowledge.info/nmsruntime/saveasdialog.asp?lID=1858&amp;sID=321">Scottish
-          Information Commissioner's guidance</a> for details.</p>
-    </dd>
-
-    <dt id="data_protection">Can I request information about myself? <a href="#data_protection">#</a> </dt>
-
-    <dd>
-      <p>No. Requests made using <%= site_name %> are public, made under the Freedom of
-        Information Act, and cannot help you find information about a private
-        individual.</p>
-
-      <p>If you would like to know what information a public
-        authority holds about yourself, you should make a "Subject Access Request" in
-        private using Data Protection law.  The leaflet "<a
-        href="http://www.ico.gov.uk/upload/documents/library/data_protection/introductory/subject_access_rights.pdf">How to access your information</a>" (on the Information Commissioner's
-        website) explains how to do this.</p>
-
-      <p>If you see that somebody has included personal information, perhaps
-        unwittingly, in a request, please <a href="<%= help_contact_path %>">contact us</a>
-        immediately so we can remove it.</p>
-    </dd>
-
-
-    <dt id="private_requests">I'd like to keep my request secret! (At least until I publish my story) <a href="#private_requests">#</a> </dt>
-
-    <dd><p><%= site_name %> is currently only designed for public requests. All
-        responses that we receive are automatically published on the website for anyone
-        to read.  </p>
-      <p>You should contact the public authority directly if you would like to
-        make a request in private.  If you're interested in buying a system which helps
-        you manage FOI requests in secret, then <a href="<%= help_contact_path %>">contact us</a>.
-      </p>
-    </dd>
-
-    <dt id="eir">Why can I only request information about the environment from some authorities? <a href="#eir">#</a> </dt>
+    <dt id="quickly_response">
+      Πόσο γρήγορα θα λάβω απάντηση; <a href="#quickly_response">#</a>
+    </dt>
 
     <dd>
-      <p>Some public authorities, such as <a href="https://www.whatdotheyknow.com/body/south_east_water">South East Water</a>,
-        don't come under the Freedom of Information Act, but do come under another law called
-        the Environmental Information Regulations (EIR).
+      <p>
+        Σύμφωνα με τον νόμο, οι δημόσιες αρχές πρέπει να ανταποκρίνονται άμεσα
+        στα αιτήματα. Ακόμα κι αν δεν είναι άμεσα, σε όλες σχεδόν τις
+        περιπτώσεις πρέπει να απαντήσουν εντός 20 ημερολογιακών ημερών.
+        Παράταση:
       </p>
 
-      <p>It's a very similar law, so you make a request
-        to them using <%= site_name %> in just the same way as an FOI request. The only
-        difference is that on the page where you write your request, it reminds you
-        that you can only request "environmental information" and tells you what that
-        means. It is quite broad.
-      </p>
+      <blockquote>
+        <p>
+          Η προθεσμία αυτή μπορεί να παραταθεί μέχρι είκοσι (20) επιπλέον ημέρες
+          από τη λήξη του πρώτου εικοσαημέρου για αιτήσεις που χαρακτηρίζονται
+          από τον φορέα ως περίπλοκες ή μεγάλης κλίμακας. Στην περίπτωση αυτή
+          γνωστοποιούνται στον αιτούντα, μέσα σε δέκα (10) ημέρες από την
+          παραλαβή της αίτησης.
+        </p>
+        <footer>— <cite>Άρθρο 62 Ν. 4727/2020</cite></footer>
+      </blockquote>
 
-      <p>You can, of course, request environmental information from other
-        authorities. Just make a Freedom of Information (FOI) request as normal. The
-        authority has a duty to work out if the Environmental Information Regulations
-        (EIR) is the more appropriate legislation to reply under.
+      <p>
+        Το arthro5A.gr θα σας στείλει e-mail εάν δεν λάβετε έγκαιρη απάντηση.
+        Στη συνέχεια, μπορείτε να στείλετε στη δημόσια αρχή ένα μήνυμα για να
+        τους υπενθυμίσετε το αίτημά σας και να τους τονίσετε ότι παραβιάζουν το
+        νόμο.
       </p>
     </dd>
 
-    <dt id="multiple">Can I make the same to request to lots of authorities, e.g. all councils? <a href="#multiple">#</a> </dt>
+    <dt id="no_response">
+      Τι γίνεται αν δεν λάβω ποτέ απάντηση; <a href="#no_response">#</a>
+    </dt>
 
-    <dd>We ask you to first send a test version of your request to a few
-      authorities. Their responses will help you improve the wording of your request,
-      so that you get the best information when you send the request to all of
-      the authorities. There is currently no automated system for sending the request
-      to the other authorities, you must copy and paste it by hand.
-
+    <dd>
+      <p>
+        Υπάρχουν πολλά πράγματα που μπορείτε να κάνετε αν δεν λάβετε ποτέ
+        απάντηση:
+      </p>
+      <ol>
+        <li>
+          Μερικές φορές μπορεί να προέκυψε κάποιο πραγματικό πρόβλημα και η
+          δημόσια αρχή να μην έλαβε ποτέ το αίτημα. Αξίζει να τηλεφωνήσετε στην
+          αρχή και να ρωτήσετε ευγενικά αν έλαβαν το αίτημα που τους εστάλη μέσω
+          e-mail. Εάν δεν το έχουν λάβει, το πρόβλημα πιθανότατα οφείλεται στα
+          «φίλτρα ανεπιθύμητης αλληλογραφίας» (spam).
+        </li>
+        <li>
+          Μπορείτε να ασκήσετε προσφυγή κατά της σιωπηρής απόρριψης του
+          αιτήματός σας ενώπιον της αρμόδιας Εθνικής Αρχής Διαφάνειας. Σ’αυτή
+          την περίπτωση, στείλτε μας ένα email για να σας καθοδηγήσουμε.
+        </li>
+      </ol>
     </dd>
 
-    <dt id="offsite">I made a request off the site, how do I upload it to the archive?<a href="#offsite">#</a> </dt>
+    <dt id="data_protection">
+      Μπορώ να ζητήσω πληροφορίες για τον εαυτό μου;
+      <a href="#data_protection">#</a>
+    </dt>
 
-    <dd><%= site_name %> is an archive of requests made through the site,
-      and does not try to be an archive of all FOI requests. We'll never support uploading
-      other requests. For one thing, we wouldn't be able to verify that other
-      responses actually came from the authority. If this really matters to you,
-      you can always make the same request again via <%= site_name %>.
+    <dd>
+      <p>
+        Όχι. Τα αιτήματα που υποβάλλονται χρησιμοποιώντας το arthro5A.gr είναι
+        δημόσια, υποβάλλονται βάσει του νόμου περί ελευθερίας της πληροφόρησης
+        και δεν μπορούν να σας βοηθήσουν να βρείτε πληροφορίες σχετικά ιδιωτικές
+        πληροφορίες και προσωπικά δεδομένα. Εάν θέλετε να μάθετε ποιες
+        πληροφορίες διαθέτει μια δημόσια αρχή για τον εαυτό σας, θα πρέπει να
+        υποβάλετε ένα "<strong>Αίτημα πρόσβασης στα προσωπικά δεδομένα</strong>"
+        χρησιμοποιώντας τη νομοθεσία περί προστασίας δεδομένων.
+      </p>
+
+      <p>
+        Το <strong>δικαίωμα στην πρόσβαση</strong> ενός υποκειμένου στα
+        προσωπικά του δεδομένα κατοχυρώθηκε στην Ελλάδα ήδη από το 1997, συνεπώς
+        δεν πρόκειται για κάποιο νέο δικαίωμα. Ωστόσο, με την πρόσφατη
+        αναθεώρηση του νομοθετικού πλαισίου για την προστασία προσωπικών
+        δεδομένων, τόσο σε ευρωπαϊκό, όσο και σε εθνικό επίπεδο, η σημασία του
+        δικαιώματος αυτού έχει επανέλθει στο προσκήνιο. Το δικαίωμα στην
+        πρόσβαση αναγνωρίζεται σήμερα στο
+        <strong
+          >Άρθρο 15 του Γενικού Κανονισμού για την Προστασία Δεδομένων
+          (γνωστότερος στα αγγλικά με το ακρωνύμιο «GDPR»</strong
+        >) και ορισμένοι περιορισμοί του εισήχθησαν με τον πρόσφατο Ν.4624/2019,
+        ιδίως στα Άρθρα 29, 30 και 33.
+      </p>
+
+      <p>Το δικαίωμα στην πρόσβαση ασκείται <strong>δωρεάν</strong>.</p>
+
+      <p>
+        Ο εκάστοτε οργανισμός οφείλει να σου απαντήσει και μάλιστα
+        <strong>μέσα σε ένα μήνα</strong> από την άσκηση του δικαιώματος.
+      </p>
+
+      <p>
+        Μπορείς να ζητήσεις απλά να μάθεις πληροφορίες για τα δεδομένα σου ή και
+        να ζητήσεις αντίγραφο αυτών. Κάθε οργανισμός χρησιμοποιεί διαφορετικά
+        μέσα με τα οποία μπορείς να ασκήσεις τα δικαιώματα προστασίας των
+        προσωπικών σου δεδομένων, συμπεριλαμβανομένου του δικαιώματος πρόσβασης.
+        Μπορείς να ζητήσεις πρόσβαση στα δεδομένα σου, επικοινωνώντας με τον
+        αντίστοιχο οργανισμό μέσω ταχυδρομείου (ηλεκτρονικού ή απλού), μέσω
+        κάποιας ειδικής φόρμας ή άλλου αντίστοιχου πεδίου που θα βρεις στην
+        ιστοσελίδα του οργανισμού.
+      </p>
+
+      <p>
+        Γενικά, καλό είναι να αναζητήσεις για λέξεις κλειδιά όπως «Πολιτική
+        Απορρήτου»/ «Privacy Policy», «ρυθμίσεις ασφάλειας», «ρυθμίσεις
+        απορρήτου», «άσκηση δικαιωμάτων», «Υπεύθυνος Προστασίας Δεδομένων»,
+        «πρόσβαση στις πληροφορίες μου» κλπ., ώστε να βρεις τον κατάλληλο τρόπο
+        να επικοινωνήσεις το αίτημα της πρόσβασης στα δεδομένα σου.
+      </p>
+
+      <p>
+        Εάν δείτε ότι κάποιος/-α έχει συμπεριλάβει προσωπικά δεδομένα σε αίτημά
+        του/της στοιχεία, <a href="<%= help_contact_path %>">ειδοποιήστε μας
+        αμέσως</a>, ώστε να μπορέσουμε να τα δι αγράψουμε.
+      </p>
+    </dd>
+
+    <dt id="private_requests">
+      Θα ήθελα να κρατήσω το αίτημά μου μυστικό! (Τουλάχιστον μέχρι να
+      δημοσιεύσω το σχετικό θέμα μου/ άρθρο μου)
+      <a href="#private_requests">#</a>
+    </dt>
+
+    <dd>
+      <p>
+        Το Arthro5A.gr είναι προς το παρόν σχεδιασμένο μόνο για δημόσια
+        αιτήματα. Όλες οι απαντήσεις που λαμβάνουμε δημοσιεύονται αυτόματα στον
+        ιστότοπο ώστε όλοι/ες να μπορούν να τις διαβάσουν. Θα πρέπει να
+        επικοινωνήσετε απευθείας με τη δημόσια αρχή εάν θέλετε να υποβάλετε ένα
+        αίτημα ιδιωτικά.
+      </p>
+    </dd>
+
+    <dt id="offsite">
+      Έκανα ένα αίτημα εκτός της πλατφόρμας arthro5A.gr, πώς μπορώ να το
+      ανεβάσω/προσθέσω στο αρχείο αιτημάτων;
+      <a href="#offsite">#</a>
+    </dt>
+    <dd>
+      <p>
+        Το Arthro5A.gr είναι ένα αρχείο αιτημάτων που υποβάλλονται μέσω του
+        ιστότοπου και δεν αποτελεί γενικό αρχείο όλων των αιτημάτων κατάθεση
+        εγγράφων και πρόσβασης στη δημόσια πληροφορία που έχουν υποβληθεί. Δεν
+        θα υποστηρίξουμε ποτέ τη μεταφόρτωση άλλων αιτημάτων. Κυρίως γιατί δεν
+        θα μπορούσαμε να επαληθεύσουμε ότι άλλες απαντήσεις προήλθαν πραγματικά
+        από την αρμόδια δημόσια αρχή ή τον φορέα. Εάν σας ενδιαφέρει να
+        προστεθεί στο αρχείο μας, μπορείτε πάντα να κάνετε το ίδιο αίτημα ξανά
+        μέσω του arthro5A.gr.
+      </p>
     </dd>
 
     <% if AlaveteliConfiguration::enable_annotations %>
-      <dt id="moderation">How do you moderate request annotations? <a href="#moderation">#</a> </dt>
+    <dt id="moderation">
+      Πως ελέγχετε τα σχόλια αιτημάτων; <a href="#moderation">#</a>
+    </dt>
 
-      <dd>
-        <p>Annotations on <%= site_name %> are to help
-          people get the information they want, or to give them pointers to places they
-          can go to help them act on it. We reserve the right to remove anything else.
-        </p>
-        <p>Endless, political discussions are not allowed.
-          Post a link to a suitable forum or campaign site elsewhere.</p>
-      </dd>
+    <dd>
+      <p>
+        Οι σχολιασμοί στο arthro5A.gr είναι για να βοηθήσουν τους ανθρώπους να
+        πάρουν τις πληροφορίες που θέλουν ή να τους προσφέρουν καθοδήγηση για να
+        δράσουν. Ατελείωτες, πολιτικές συζητήσεις δεν επιτρέπονται. Δημοσιεύστε
+        έναν σύνδεσμο σε ένα κατάλληλο φόρουμ ή σύνδεσμο καμπάνιας αλλού.
+      </p>
+
+      <p>
+        Διατηρούμε το δικαίωμα να αφαιρέσουμε οτιδήποτε άλλο που παραβιάζει αυτή
+        την αρχή τον
+        <a href="https://vouliwatch.gr/code-of-conduct"
+          >κώδικα δεοντολογίας του vouliwatch</a
+        >.
+      </p>
+    </dd>
     <% end %>
-
   </dl>
 
-  <p><strong>Next</strong>, read about <a href="<%= help_privacy_path %>">your privacy</a> --&gt;
+  <p>
+    <strong>Next</strong>, read about
+    <a href="<%= help_privacy_path %>">your privacy</a> --&gt;
+  </p>
 
-    <%= render partial: 'history' %>
+  <%= render partial: 'history' %>
 
-    <div id="hash_link_padding"></div>
+  <div id="hash_link_padding"></div>
 </div>
