@@ -19,7 +19,7 @@
   &:hover,
   &:active,
   &:focus {
-    background-color: darken($color_primary, 15%);
+    background-color: darken($color_secondary, 15%);
     color: $color_white;
   }
 
@@ -28,7 +28,7 @@
 /* Selected menu item */
 %selected-menu-item {
   font-weight: bold;
-  color: $color_primary;
+  color: $color_neutral_dark;
   background-color: $color_neutral_light;
   &:hover,
   &:active,
@@ -97,12 +97,12 @@
 .sign_in_link,
 .sign_in_link:link,
 .sign_in_link:visited {
-  color: #fff;
+  color: $color_secondary;
   text-decoration: none;
   &:hover,
   &:active,
   &:focus {
-    color: #fff;
+    color: $color_secondary;
   }
 }
 
@@ -218,14 +218,14 @@ input.use-datepicker[type=text] {
 
 @mixin button-secondary($args...) {
   @include button-base($args...);
-  background-color: desaturate(darken($color_sand, 10%), 5%);
+  background-color: desaturate(darken($color_secondary, 10%), 5%);
   color: $color_black;
   font-weight: normal;
   &:hover,
   &:active,
   &:focus {
     color: $color_black;
-    background-color: desaturate(darken($color_sand, 20%), 5%);
+    background-color: desaturate(darken($color_secondary, 20%), 5%);
   }
 }
 
@@ -287,7 +287,7 @@ a.link_button_green_large {
 .topnav {
   background-color: $topnav_bg;
   @media( min-width: $main_menu-mobile_menu_cutoff ) {
-    box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+    box-shadow: inset 0 5px 5px 0 rgba(0,0,0,0.1);
   }
 }
 
@@ -312,7 +312,7 @@ a.link_button_green_large {
   border-bottom: none;
   a {
     @extend %menu-item;
-    color: transparentize($color_white, 0.2);
+    color: $color_secondary;
     @media( min-width: $main_menu-mobile_menu_cutoff ) {
       padding: 0.875em 1em;
     }
@@ -382,7 +382,6 @@ a.link_button_green_large {
 
 /* LANGUAGE SWITCHER */
 #user_locale_switcher {
-  background-color: $color_primary;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: transparent;
   }
@@ -415,7 +414,7 @@ p.locale-list-trigger {
   position: relative;
   z-index: 999;
   border-radius: 3px;
-  color: $color_white;
+  color: $color_secondary;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     padding: 0.66em 2em 0.66em 0.66em;
   }
@@ -485,7 +484,7 @@ p.locale-list-trigger {
 .locale-list .available-languages a:visited {
   text-decoration: none;
   transition: background-color 0.5s ease-out;
-  color: #fff;
+  color: $color_secondary;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: darken($color_dark_grey, 10%);
     display: block;
@@ -501,7 +500,7 @@ p.locale-list-trigger {
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: darken($color_mid_grey, 10%);
   }
-  color: $color_white;
+  color: $color_secondary;
 
 }
 
@@ -512,8 +511,7 @@ p.locale-list-trigger {
 }
 
 .locale-list.active .current-locale {
-  color: $color_white;
-  border-color: $color_primary;
+  color: $color_secondary;
   @include respond-min($main_menu-mobile_menu_cutoff) {
     background-color: darken($color_dark_grey, 10%);
     border-color: $color_black;
