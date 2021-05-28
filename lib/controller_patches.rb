@@ -10,4 +10,12 @@ Rails.configuration.to_prepare do
       )
     end
   end
+
+  PublicBodyController.class_eval do
+    before_action :get_greek_alphabet, only: [:list]
+
+    def get_greek_alphabet
+      @greek_alphabet = %w[Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω]
+    end
+  end
 end
