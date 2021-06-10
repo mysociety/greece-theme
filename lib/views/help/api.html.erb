@@ -1,6 +1,6 @@
-<% @title = "About our API" %>
+<% @title = 'About our API' %>
 
-<%= render :partial => 'sidebar' %>
+<%= render partial: 'sidebar' %>
 
 <div id="left_column_flip" class="left_column_flip">
   <h1><%= @title %></h1>
@@ -33,7 +33,7 @@
       </p>
       <ul>
         <li>
-          Αναζητήστε το <%= image_tag "feed-16.png", :alt => "RSS icon" %> RSS
+          Αναζητήστε το <%= image_tag 'feed-16.png', alt: 'RSS icon' %> RSS
           σύνδεσμοι τροφοδοσίας.
         </li>
         <li>
@@ -84,7 +84,7 @@
       <p>
         Ένα αρχείο υπολογιστικού φύλλου (excel) που περιέχει κάθε δημόσια αρχή
         που περιλαμβάνεται στο arthro5A.gr είναι διαθέσιμο εδώ:
-        <%= link_to "all-authorities.csv", all_public_bodies_csv_path %>
+        <%= link_to 'all-authorities.csv', all_public_bodies_csv_path %>
       </p>
     </dd>
 
@@ -94,9 +94,11 @@
         Το API εγγραφής έχει σχεδιαστεί για χρήση από τους φορείς για τη
         δημιουργία των δικών τους αιτημάτων στο σύστημα. Το API χρησιμοποιήθηκε
         από το
-        <a href="https://github.com/mysociety/foi-register">Fλογισμικό FOI
-        Register</a> της mySociety για να υποστηρίξει τη χρήση του Alaveteli ως
-        αρχείου καταγραφής αποκάλυψης για όλες τις δραστηριότητες FOI σε έναν
+        <a href="https://github.com/mysociety/foi-register"
+          >Fλογισμικό FOI Register</a
+        >
+        της mySociety για να υποστηρίξει τη χρήση του Alaveteli ως αρχείου
+        καταγραφής αποκάλυψης για όλες τις δραστηριότητες FOI σε έναν
         συγκεκριμένο δημόσιο φορέα. Περισσότερες τεχνικές πληροφορίες σχετικά με
         το API εγγραφής είναι διαθέσιμες στον ιστότοπο
         <a href="http://www.alaveteli.org/">Alaveteli.org</a>.

@@ -1,6 +1,6 @@
-<% @title = "Credit where credit’s due" %>
+<% @title = 'Credit where credit’s due' %>
 
-<%= render :partial => 'sidebar' %>
+<%= render partial: 'sidebar' %>
 
 <div id="left_column_flip" class="left_column_flip">
   <h1 id="credits"><%= @title %> <a href="#credits">#</a></h1>
@@ -58,9 +58,10 @@
 
       <p>
         Ή ενημερώστε μας για ηλεκτρονικές διευθύνσεις δημόσιων φορέων/
-        <a href="<%= help_requesting_path(:anchor => 'missing_bodies') %>">αρχών
-        που τυχόν απουσιάζουν</a> από την πλατφόρμα και εμείς θα τις
-        συμπληρώσουμε.
+        <a href="<%= help_requesting_path(anchor: 'missing_bodies') %>"
+          >αρχών που τυχόν απουσιάζουν</a
+        >
+        από την πλατφόρμα και εμείς θα τις συμπληρώσουμε.
       </p>
     </dd>
 
@@ -81,8 +82,10 @@
       <p>
         Βλέπετε κάτι που θα μπορούσε να λειτουργήσει καλύτερα; Εάν είστε
         προγραμματιστής/-ρια,
-        <a href="https://github.com/mysociety/alaveteli/">πάρτε τον κώδικα πηγής
-        (code source)</a> από το μητρικό έργο 
+        <a href="https://github.com/mysociety/alaveteli/"
+          >πάρτε τον κώδικα πηγής (code source)</a
+        >
+        από το μητρικό έργο
         <a href="http://alaveteli.org/">http://alaveteli.org</a> και στείλτε μας
         ένα αίτημα πρόσβασης (pull request).
       </p>

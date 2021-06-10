@@ -1,4 +1,4 @@
-<% @title = "Επικοινωνία" %>
+<% @title = 'Επικοινωνία' %>
 
 <%= foi_error_messages_for :contact %>
 
@@ -29,28 +29,27 @@
 </div>
 
 <%= form_for :contact do |f| %>
-
   <% if not @user %>
     <p>
       <label class="form_label" for="contact_name">Your name:</label>
-      <%= f.text_field :name, :size => 20 %>
-      (or <%= link_to "sign in", signin_path(:r => request.fullpath) %>)
+      <%= f.text_field :name, size: 20 %>
+      (or <%= link_to 'sign in', signin_path(r: request.fullpath) %>)
     </p>
 
     <p>
       <label class="form_label" for="contact_email">Your email:</label>
-      <%= f.text_field :email, :size => 20 %>
+      <%= f.text_field :email, size: 20 %>
     </p>
   <% end %>
 
   <p>
     <label class="form_label" for="contact_subject">Subject:</label>
-    <%= f.text_field :subject, :size => 50 %>
+    <%= f.text_field :subject, size: 50 %>
   </p>
 
   <p>
     <label class="form_label" for="contact_message">Message to website:</label>
-    <%= f.text_area :message, :rows => 10, :cols => 60 %>
+    <%= f.text_area :message, rows: 10, cols: 60 %>
   </p>
 
   <p style="display:none;">
@@ -60,22 +59,25 @@
 
   <% if !@last_request.nil? %>
     <p>
-      <label class="form_label" for="contact_message">Include link to request:</label>
+      <label class="form_label" for="contact_message"
+        >Include link to request:</label
+      >
       <%= request_link(@last_request) %>
-      <%= submit_tag "remove", :name => 'remove' %>
+      <%= submit_tag 'remove', name: 'remove' %>
     </p>
   <% end %>
   <% if !@last_body.nil? %>
     <p>
-      <label class="form_label" for="contact_message">Include link to authority:</label>
+      <label class="form_label" for="contact_message"
+        >Include link to authority:</label
+      >
       <%= public_body_link(@last_body) %>
-      <%= submit_tag "remove", :name => 'remove' %>
+      <%= submit_tag 'remove', name: 'remove' %>
     </p>
   <% end %>
 
   <div class="form_button">
     <%= hidden_field_tag(:submitted_contact_form, 1) %>
-    <%= submit_tag "Send message", :data => { :disable_with => "Sending..." } %>
+    <%= submit_tag 'Send message', data: { disable_with: 'Sending...' } %>
   </div>
-
 <% end %>
