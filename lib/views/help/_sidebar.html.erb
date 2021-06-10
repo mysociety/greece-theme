@@ -1,29 +1,47 @@
 <div id="right_column_flip" class="right_column_flip">
-  <h2>Help pages</h2>
+  <h2>Χρήσιμες Πληροφορίες</h2>
   <ul class="no_bullets">
-    <li><%= link_to_unless_current 'Introduction', help_about_path %></li>
+    <li><%= link_to_unless_current 'Εισαγωγή', help_about_path %></li>
     <li>
-      <%= link_to_unless_current 'Making requests', help_requesting_path %>
+      <%=
+        link_to_unless_current 'Υποβάλλοντας αιτήματα', help_requesting_path
+      %>
     </li>
-    <li><%= link_to_unless_current 'Your privacy', help_privacy_path %></li>
-    <li><%= link_to_unless_current 'FOI officers', help_officers_path %></li>
     <li>
-      <%= link_to_unless_current 'About the software', help_alaveteli_path %>
+      <%= link_to_unless_current 'Η ιδιωτικότητά σας', help_privacy_path %>
     </li>
-    <li><%= link_to_unless_current 'Credits', help_credits_path %></li>
-    <li><%= link_to_unless_current 'Programmers API', help_api_path %></li>
     <li>
-      <%= link_to_unless_current 'Advanced search', advanced_search_path %>
+      <%=
+        link_to_unless_current 'Απαντήσεις σε υπαλλήλους των αρχών',
+                               help_officers_path
+      %>
+    </li>
+    <li>
+      <%=
+        link_to_unless_current 'Σχετικά με το λογισμικό', help_alaveteli_path
+      %>
+    </li>
+    <li><%= link_to_unless_current 'Πιστώσεις', help_credits_path %></li>
+    <li>
+      <%= link_to_unless_current 'Προγραμματιστές/-ριες API', help_api_path %>
+    </li>
+    <li>
+      <%= link_to_unless_current 'Σύνθετη αναζήτηση', advanced_search_path %>
     </li>
     <% if feature_enabled?(:alaveteli_pro) %>
-      <li><%= link_to_unless_current 'Pro', help_pro_path %></li>
+      <li>
+        <%=
+          link_to_unless_current 'Επαγγελματίες/Pro Χρήστες/-ριες',
+                                 help_pro_path
+        %>
+      </li>
     <% end %>
   </ul>
 
-  <h2 id="contact" class="contact">Contact us</h2>
+  <h2 id="contact" class="contact">Επικοινωνήστε μαζί μας</h2>
   <p>
-    If your question isn't answered here, or you just wanted to let us know
-    something about the site,
-    <a href="<%= help_contact_path %>">contact&nbsp;us</a>.
+    Εάν η ερώτησή σας δεν απαντηθεί εδώ ή απλώς θέλετε να μας ενημερώσετε
+    σχετικά με τον ιστότοπο,
+    <a href="<%= help_contact_path %>">επικοινωνήστε μαζί μας</a>.
   </p>
 </div>
