@@ -12,11 +12,29 @@ msgstr "Μια πρωτοβουλία του {{project_by}}, με την υπο�
 msgid "Currently <strong>waiting for a response</strong> from {{public_body_link}}, they should respond promptly and"
 msgstr "Σε κατάσταση <strong>αναμονής για απάντηση</strong> από {{public_body_link}}, θα έπρεπε να απαντήσουν άμεσα και "
 
+msgid "Dear [Authority name],"
+msgstr "Αγαπητέ/ή αρμόδιε/α στ@ [Authority name],"
+
+msgid "Dear {{placeholder_body_name}},"
+msgstr "Αγαπητέ/ή αρμόδιε/α στ@ {{placeholder_body_name}},"
+
+msgid "Dear {{public_body_name}},"
+msgstr "Αγαπητέ/ή αρμόδιε/α στ@ {{public_body_name}},"
+
 msgid "Enter words that you want to find separated by spaces, e.g. <strong>climbing lane</strong>"
 msgstr "Εισάγετε τις λέξεις που επιθυμείτε να βρείτε χωρισμένες με κενά, π.χ. <strong>δημόσια σύμβαση</strong>"
 
 msgid "Find an authority"
 msgstr "Βρείτε μια δημόσια αρχή"
+
+msgid "If you would like to contest the authority's claim that they do not hold the information, here is <a href=\"{{complain_url}}\">how to complain</a>."
+msgstr "Αν θα θέλατε να αμφισβητήσετε τον ισχυρισμό της αρχής ότι δεν κατέχει τις πληροφορίες, δείτε εδώ <a href=\"{{complain_url}}\">πώς μπορείτε να διαμαρτυρηθείτε</a>."
+
+msgid "Is {{email_address}} the wrong address for {{law_used_full}} requests to {{public_body_name}}? If so, please contact us using this form:"
+msgstr "Είναι το {{email_address}} η σωστή ηλεκτρονική διεύθυνση για {{law_used_full}} στο {{public_body_name}}; Αν δεν είναι, επικοινωνήστε μαζί μας χρησιμοποιώντας αυτήν τη φόρμα:  "
+
+msgid "Results page {{page_number}}"
+msgstr "Σελίδα αποτελεσμάτων {{page_number}}"
 
 msgid "You will now be emailed updates about <a href=\"{{search_url}}\">this search</a>."
 msgstr "Τώρα θα σας αποσταλούν ενημερώσεις σχετικά με <a href=\"{{search_url}}\">αυτή την αναζήτηση</a>."
@@ -27,8 +45,14 @@ msgstr "Τώρα θα σας αποσταλούν ενημερώσεις σχε�
 msgid "You will now be emailed updates about any <a href=\"{{new_requests_url}}\">new requests</a>."
 msgstr "Τώρα θα σας αποσταλούν ενημερώσεις σχετικά με <a href=\"{{new_requests_url}}\">νέα αιτήματα</a>."
 
+msgid "Yours faithfully,"
+msgstr "Με εκτίμηση,"
+
+msgid "Yours sincerely,"
+msgstr "Με εκτίμηση,"
+
+msgid "Yours,"
+msgstr "Με εκτίμηση,"
+
 msgid "Investigating asbestos use in schools"
 msgstr "Διερεύνηση για τη χρήση αμιάντου σε σχολεία"
-
-msgid "Results page {{page_number}}"
-msgstr "Σελίδα αποτελεσμάτων {{page_number}}"
