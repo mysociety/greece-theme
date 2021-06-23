@@ -26,3 +26,6 @@ msgstr "Τώρα θα σας αποσταλούν ενημερώσεις σχε�
 
 msgid "Investigating asbestos use in schools"
 msgstr "Διερεύνηση για τη χρήση αμιάντου σε σχολεία"
+
+msgid "Results page {{page_number}}"
+msgstr "Σελίδα αποτελεσμάτων {{page_number}}"
