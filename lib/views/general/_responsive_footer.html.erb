@@ -1,8 +1,20 @@
 <div class="footer" id="footer" role="contentinfo">
   <div class="row">
     <div class="footer__about">
-      <h2><%= site_name %></h2>
-      <%= render :partial => 'general/responsive_credits' %>
+      <a href="https://vouliwatch.gr/" class="footer__logo">Vouliwatch</a>
+
+      <div class="footer__byline">
+        <p class="footer__credit">
+          <%=
+            _('A project by {{project_by}}, powered by {{powered_by}}.',
+              project_by: link_to('Vouliwatch', 'https://vouliwatch.gr'),
+              powered_by: link_to('Alaveteli', 'https://alaveteli.org')
+            )
+          %>
+        </p>
+    </div>
+
+    <div class="footer__links">
       <ul class="about__contact-links">
         <li>
           <%= link_to _('Contact us'), help_contact_path %>

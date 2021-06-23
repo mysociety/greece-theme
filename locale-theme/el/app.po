@@ -6,6 +6,9 @@
 # msgid "Make and browse Freedom of Information (FOI) requests"
 # msgstr "Make and browse Right to Know (RTI) requests"
 
+msgid "A project by {{project_by}}, powered by {{powered_by}}."
+msgstr "Μια πρωτοβουλία του {{project_by}}, με την υποστήριξη του {{powered_by}}."
+
 msgid "Currently <strong>waiting for a response</strong> from {{public_body_link}}, they should respond promptly and"
 msgstr "Σε κατάσταση <strong>αναμονής για απάντηση</strong> από {{public_body_link}}, θα έπρεπε να απαντήσουν άμεσα και "
 
