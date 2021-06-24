@@ -533,7 +533,7 @@ p.locale-list-trigger {
       border: 0;
       padding: 0;
     }
-  } 
+  }
 
 
 #banner {
@@ -592,6 +592,8 @@ p.locale-list-trigger {
   width: 100% !important; // override the various grid-column() breakpoints in _footer_layout.scss
   @include clearfix();
 
+  margin-bottom: 10px;
+
   h2 {
     color: $color_white;
   }
@@ -608,11 +610,12 @@ p.locale-list-trigger {
   @extend .image-replacement;
   width: 200px;
   height: 80px;
-  background: $white image-url('vouliwatch-logo.png') 0 0 no-repeat;
+  background: image-url('logoVW.png') 0 0 no-repeat;
   background-size: 200px 80px;
 }
 
-.footer__byline {
+.footer__byline,
+.footer__links {
   padding-left: 200px + 20px; // make space for floated logo
 }
 
