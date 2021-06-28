@@ -9,8 +9,11 @@
 msgid "A project by {{project_by}}, powered by {{powered_by}}."
 msgstr "Μια πρωτοβουλία του {{project_by}}, με την υποστήριξη του {{powered_by}}."
 
+msgid "Freedom of Information"
+msgstr "Αίτημα Κατάθεσης Εγγράφων"
+
 msgid "&#8592; Previous"
-msgstr "Επόμενο"
+msgstr "Προηγούμενο"
 
 msgid "Next &#8594;"
 msgstr "Επόμενο "
