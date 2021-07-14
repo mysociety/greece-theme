@@ -8,3 +8,66 @@
 
 msgid "A project by {{project_by}}, powered by {{powered_by}}."
 msgstr "Μια πρωτοβουλία του {{project_by}}, με την υποστήριξη του {{powered_by}}."
+
+msgid "<strong><code>tag:charity</code></strong> to find all public authorities or requests with a given tag. You can include multiple tags, and tag values, e.g. <code>tag:openlylocal AND tag:financial_transaction:335633</code>. Note that by default any of the tags can be present, you have to put <code>AND</code> explicitly if you only want results them all present."
+msgstr "<strong><code>tag:charity</code></strong> για να βρείτε όλες τις δημόσιες αρχές ή τα αιτήματα με μια δεδομένη ετικέτα. Μπορείτε να συμπεριλάβετε πολλαπλές ετικέτες και τιμές ετικετών, π.χ. <code>ετικέτα:openlylocal AND tag:financial_transaction:335633</code>. Σημειώστε ότι από προεπιλογή οποιαδήποτε από τις ετικέτες μπορεί να είναι διαθέσιμες, θα πρέπει να έχετε προσθέσει ρητά το <code>AND</code> αν θέλετε τα συνολικά αποτελέσματα."
+
+msgid "Browse <a href=\"{{requests_url}}\">{{number_of_requests}} requests</a> to <a href=\"{{authorities_url}}\">{{number_of_authorities}} authorities</a>"
+msgstr "Αναζήτηση <a href=\"{{requests_url}}\">{{number_of_requests}} αιτήματα</a> σε <a href=\"{{authorities_url}}\">{{number_of_authorities}} αρχές</a>"
+
+msgid "Browse <a href='{{url}}'>other requests</a> for examples of how to word your request."
+msgstr "Εξερευνήστε <a href='{{url}}'>άλλα αιτήματα</a> ως παράδειγμα του πώς να εκφράσετε το αίτημά σας."
+
+msgid "By law, you should get a response promptly, and normally before the end of <strong>{{date_response_required_by}}</strong>."
+msgstr "Δια νόμου, πρέπει να λάβετε απάντηση άμεσα, και κανονικά πριν από τις <strong>{{date_response_required_by}}</strong>."
+
+msgid "By law, you should have got a response promptly, and normally before the end of <strong>{{date_response_required_by}}</strong>."
+msgstr "Βάσει νόμου, θα πρέπει να έχετε λάβει μια απάντηση αμέσως, και κανονικά πριν από το τέλος της ημερομηνίας <strong>{{date_response_required_by}}</strong>."
+
+msgid "First, type in the <strong>name of the public authority</strong> you'd like information from."
+msgstr "Αρχικά, πληκτρολογήστε το <strong>όνομα του δημόσιου οργανισμού</strong> από τον οποίο ζητάτε πληροφορίες."
+
+msgid "Please <strong>only</strong> write messages directly relating to your request {{request_link}}. If you would like to ask for information that was not in your original request, then <a href=\"{{new_request_link}}\">file a new request</a>."
+msgstr "Παρακαλώ <strong>μόνο</strong>γράψτε μηνύματα που σχετίζονται απευθείας με το αίτημά σας {{request_link}}. Αν θέλετε να ζητήσετε πληροφορίες που δεν ήταν στο αρχικό σας αίτημα τότε <a href=\"{{new_request_link}}\">καταθέστε νέο αίτημα</a>."
+
+msgid "Please only request information that comes under those categories, <strong>do not waste your time</strong> or the time of the public authority by requesting unrelated information."
+msgstr "Παρακαλούμε να ζητήσετε μόνο πληροφορίες που εμπίπτουν σε αυτές τις κατηγορίες, <strong>μην σπαταλάτε το χρόνο σας</strong> ή το χρόνο της δημόσιας αρχής ζητώντας άσχετες πληροφορίες."
+
+msgid "Please select each of these requests in turn, and <strong>let everyone know</strong> if they are successful yet or not."
+msgstr "Παρακαλώ επιλέξτε καθένα από αυτά τα αιτήματα με τη σειρά του, <strong>και κάντε σε όλους γνωστό</strong> αν είναι επιτυχημένα ή όχι."
+
+msgid "Thank you for updating the status of the request '<a href=\"{{url}}\">{{info_request_title}}</a>'. There are some more requests below for you to classify."
+msgstr "Ευχαριστούμε που ενημερώνετε την κατάσταση των αιτημάτων '<a href=\"{{url}}\">{{info_request_title}}</a>'. Παρακάτω υπάρχουν περισσότερα αιτήματα για να ταξινομήσετε. "
+
+msgid "The response to your request has been <strong>delayed</strong>. You can say that, by law, the authority should normally have responded <strong>promptly</strong> and by <strong>{{date}}</strong>"
+msgstr "Η απάντηση στο αίτημά σας έχει <strong>καθυστερήσει</strong>. Μπορείτε να πείτε ότι, από το νόμο, η αρχή θα έπρεπε κανονικά να έχει απαντήσει <strong>άμεσα</strong> και μέχρι τις <strong>{{date}}</strong>"
+
+msgid "This request is hidden, so that only you the requester can see it. Please <a href=\"{{url}}\">contact us</a> if you are not sure why."
+msgstr "Αυτό το αίτημα είναι κρυμμένο, έτσι ώστε μόνο εσείς, ο αιτών, μπορείτε να το δειτε. Παρακαλούμε <a href=\"{{url}}\">επικοινωνήστε μαζί μας </a>αν δεν είστε σίγουροι για τον λόγο."
+
+msgid "To let everyone know, follow this link and then select the appropriate box."
+msgstr "Για να γνωστοποιήσετε την υπόθεση, ακολουθήστε αυτό το link και επιλέξτε την κατάλληλη κατηγορία:"
+
+msgid "When you're done, <strong>come back here</strong>, <a href=\"{{url}}\">reload this page</a> and file your new request."
+msgstr "Όταν τελειώσετε, <strong>επιστρέψτε εδώ</strong>, <a href=\"{{url}}\">φορτώστε ξανά τη σελίδα</a>και υποβάλετε το νέο αίτημά σας. "
+
+msgid "You have the <strong>right</strong> to request information from any publicly-funded body, and get answers. {{site_name}} helps you make a Freedom of Information request. It also publishes all requests online."
+msgstr "Έχετε το <strong>δικαίωμα</strong> να ζητήσετε πληροφορίες από οποιονδήποτε οργανισμό που χρηματοδοτείται από το δημόσιο και να λάβετε απαντήσεις. To {{site_name}} σας βοηθά να υποβάλετε ένα Αίτημα Κατάθεσης Εγγράφων και Πρόσβασης στη Δημόσια Πληροφορία. Δημοσιεύει επίσης όλα τα αιτήματα διαδιαδικτυακά."
+
+msgid "Your request was called {{info_request}}. Letting everyone know whether you got the information will help us keep tabs on"
+msgstr "Το αίτημά σας έχει χαρακτηριστεί ως {{info_request}}. Η δημοσιοποίηση της υπόθεσής σας και το αν λάβατε τις πληροφορίες που ζητήσατε, θα μας βοηθήσει να την παρακολουθούμε στενά."
+
+msgid "Your response will <strong>appear on the Internet</strong>, <a href=\"{{url}}\">read why</a> and answers to other questions."
+msgstr "Η απάντησή σας θα <strong>εμφανιστεί στο διαδίκτυο</strong>, <a href=\"{{url}}\">διαβάστε γιατί</a> και απαντήσεις σε άλλα ερωτήματα. "
+
+msgid "{{public_body_name}} no longer exists. From the request page, try replying to a particular message, rather than sending a general followup. If you need to make a general followup, and know an email which will go to the right place, please <a href=\"{{url}}\">send it to us</a>."
+msgstr "ο/η {{public_body_name}} δεν υπάρχει πια. Δοκιμάστε να απαντήσετε από τη σελίδα αιτημάτων σε ένα συγκεκριμένο μήνυμα, αντί να στείλετε μια γενική απάντηση. Εάν πρέπει να δώσετε μια γενική απάντηση και να ξέρετε ένα email που θα πάει στο σωστό σημείο, παρακαλούμε <a href=\"{{url}}\">στείλτε το σε εμάς</a>."
+
+msgid "{{user}} ({{user_admin_link}}) made this {{law_used_full}} request (<a href=\"{{request_admin_url}}\">admin</a>) to {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">admin</a>)"
+msgstr "ο/η {{user}} ({{user_admin_link}}) έκανε αυτό το {{law_used_full}} αίτημα (<a href=\"{{request_admin_url}}\">Διαχειριστής</a>) στο {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">Διαχειριστής</a>)"
+
+msgid "{{user}} ({{user_admin_link}}) made this {{law_used_full}} request (<a href=\"{{request_admin_url}}\">admin</a>) to {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">admin</a>) as part of <a href=\"{{url}}\">a batch sent to {{count}} authorities</a>"
+msgstr "ο/η {{user}} ({{user_admin_link}}) έκανε αυτό το {{law_used_full}} αίτημα (<a href=\"{{request_admin_url}}\">Διαχειριστής</a>) σε {{public_body_link}} (<a href=\"{{public_body_admin_url}}\">Διαχειριστής</a>) ως μέρος <a href=\"{{url}}\">μιας παρτίδας που αποστέλλεται σε {{count}} αρχές</a>"
+
+msgid "Sign up"
+msgstr "εγγραφείτε"
